@@ -43,28 +43,38 @@ nav a {
   padding:0 80px;
   overflow:hidden;
 }
+.banner{
+  position:relative;
+  height:70vh;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  padding-left:80px;
+  overflow:hidden;
+}
 .banner-img{
   position:absolute;
   right:0;
   top:0;
   height:100%;
-  width:50%;
+  width:100%;
   object-fit:cover;
 }
 .banner-text{
   position:relative;
-  background:rgba(255,255,255,.8);
-  backdrop-filter:blur(10px);
+  max-width:420px;
+  background:rgba(255,255,255,.75);
+  backdrop-filter:blur(12px);
   padding:40px;
   border-radius:25px;
-  max-width:420px;
   z-index:2;
 }
 .banner-text h2{
-  font-size:40px;
-  margin-bottom:10px;
+  font-size:42px;
+  margin-bottom:12px;
 }
 .banner-text p{
+  font-size:16px;
   color:#475569;
   margin-bottom:20px;
 }
@@ -78,23 +88,6 @@ nav a {
 }
 @media(max-width:768px){
   .banner{
-    padding:0 20px;
-    justify-content:center;
-  }
-  .banner-img{
-    width:100%;
-    opacity:.25;
-  }
-  .banner-text{
-    padding:25px;
-  }
-  .banner-text h2{
-    font-size:28px;
-  }
-}
-
-@media(max-width:768px){
-  .banner{
     padding-left:20px;
     justify-content:center;
   }
@@ -105,6 +98,7 @@ nav a {
     font-size:28px;
   }
 }
+
 
 .hero {
   padding: 100px 20px 70px;
@@ -243,5 +237,6 @@ footer {
     margin: 40px 25px;
   }
 }
+
 
 
