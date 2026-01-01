@@ -2,241 +2,161 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
 }
 body {
-  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  background: #f8fafc;
   color: #0f172a;
 }
 header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  padding: 20px 60px;
+  background: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 nav a {
-  margin-left: 25px;
   text-decoration: none;
-  color: #1e293b;
+  color: #0f172a;
+  margin-left: 20px;
   font-weight: 500;
 }
-.banner{
-  position:relative;
-  height:70vh;
-  display:flex;
-  align-items:center;
-  padding-left:80px;
-  overflow:hidden;
-}
-.banner{
-  position:relative;
-  height:70vh;
-  display:flex;
-  align-items:center;
-  justify-content:flex-start;
-  padding:0 80px;
-  overflow:hidden;
-}
-.banner{
-  position:relative;
-  height:70vh;
-  display:flex;
-  align-items:center;
-  justify-content:flex-start;
-  padding-left:80px;
-  overflow:hidden;
-}
-.banner-img{
-  position:absolute;
-  right:0;
-  top:0;
-  height:100%;
-  width:100%;
-  object-fit:cover;
-}
-.banner-text{
-  position:relative;
-  max-width:420px;
-  background:rgba(255,255,255,.75);
-  backdrop-filter:blur(12px);
-  padding:40px;
-  border-radius:25px;
-  z-index:2;
-}
-.banner-text h2{
-  font-size:42px;
-  margin-bottom:12px;
-}
-.banner-text p{
-  font-size:16px;
-  color:#475569;
-  margin-bottom:20px;
-}
-.banner-text button{
-  padding:10px 24px;
-  border-radius:25px;
-  border:none;
-  background:linear-gradient(135deg,#6366f1,#4f46e5);
-  color:white;
-  cursor:pointer;
-}
-@media(max-width:768px){
-  .banner{
-    padding-left:20px;
-    justify-content:center;
-  }
-  .banner-text{
-    padding:25px;
-  }
-  .banner-text h2{
-    font-size:28px;
-  }
-}
 
-
-.hero {
-  padding: 100px 20px 70px;
-  text-align: center;
+.banner {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  overflow: hidden;
 }
-.hero h2 {
-  font-size: 48px;
+.banner-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.banner-text {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 25px;
+  max-width: 420px;
+  z-index: 2;
+}
+.banner-text h2 {
+  font-size: 42px;
   margin-bottom: 10px;
 }
-.hero p {
-  font-size: 18px;
+.banner-text p {
+  margin-bottom: 20px;
   color: #475569;
 }
+.banner-text button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 25px;
+  background: #6366f1;
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
 .filters {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .filters button {
   padding: 8px 18px;
-  border-radius: 30px;
-  border: 1px solid #c7d2fe;
-  background: white;
-  cursor: pointer;
-  transition: 0.3s;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  background: #e2e8f0;
 }
-.filters button:hover {
-  background: #6366f1;
-  color: white;
-}
+
 .products {
-  padding: 0 60px 60px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px 60px;
 }
 .product {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(15px);
-  border-radius: 25px;
-  padding: 25px;
-  text-align: center;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-  transition: 0.4s;
-  position: relative;
-}
-.product:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
-}
-.badge {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: #6366f1;
-  color: white;
-  padding: 5px 12px;
+  background: white;
+  padding: 20px;
   border-radius: 20px;
-  font-size: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
 }
 .product img {
   width: 100%;
-  max-height: 220px;
-  object-fit: contain;
-  margin-bottom: 15px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
 }
-.product h3 {
-  font-size: 20px;
-  margin-bottom: 6px;
-}
-.stars {
-  color: #facc15;
-  margin-bottom: 6px;
-}
-.product p {
-  color: #475569;
-  margin-bottom: 10px;
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #ef4444;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
 }
 .price {
-  font-size: 20px;
+  margin: 15px 0;
+  font-size: 18px;
   font-weight: 600;
-  margin-bottom: 12px;
 }
 .price .old {
   text-decoration: line-through;
   color: #94a3b8;
-  font-size: 16px;
   margin-right: 8px;
 }
 .product button {
-  padding: 10px 22px;
-  border-radius: 25px;
+  padding: 10px 20px;
   border: none;
-  background: linear-gradient(135deg, #6366f1, #4f46e5);
-  color: white;
-  cursor: pointer;
-  transition: 0.2s;
-}
-.product button:hover {
-  transform: scale(1.05);
-}
-.info {
-  padding: 80px 20px;
-  text-align: center;
-  background: white;
-  margin: 40px 60px;
   border-radius: 25px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-}
-.info h2 {
-  font-size: 32px;
-  margin-bottom: 15px;
-}
-.info p {
-  font-size: 16px;
-  color: #475569;
-  margin-bottom: 6px;
-}
-footer {
   background: #0f172a;
   color: white;
+}
+
+.about,
+.contact {
   text-align: center;
-  padding: 18px;
+  padding: 60px 20px;
+  background: white;
   margin-top: 40px;
 }
-@media (max-width: 768px) {
-  .products {
-    padding: 0 25px 40px;
-  }
-  .hero h2 {
-    font-size: 36px;
-  }
-  .info {
-    margin: 40px 25px;
-  }
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0f172a;
+  color: white;
+  margin-top: 40px;
 }
 
-
-
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+  .banner {
+    padding-left: 20px;
+    justify-content: center;
+  }
+  .banner-text {
+    padding: 25px;
+  }
+  .banner-text h2 {
+    font-size: 28px;
+  }
+  .products {
+    padding: 20px;
+  }
+}
