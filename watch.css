@@ -30,6 +30,7 @@ header {
   z-index: 100;
 }
 .logo {
+
   font-weight: 600;
   font-size: 1.4rem;
 }
@@ -193,11 +194,5 @@ footer {
 .aboutme{
     text-align: center;
 }
-
-
-
-
-
-
 
 
