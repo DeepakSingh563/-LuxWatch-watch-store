@@ -29,16 +29,7 @@ header {
   top: 0;
   z-index: 100;
 }
-.logo {
 
-  font-weight: 600;
-  font-size: 1.4rem;
-}
-.logo img {
-  height: 40px;      
-  width: auto;       
-  object-fit: contain;
-}
 
 nav a {
   margin-left: 1.5rem;
@@ -194,5 +185,6 @@ footer {
 .aboutme{
     text-align: center;
 }
+
 
 
