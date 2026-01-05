@@ -9,6 +9,25 @@ body {
   color: #333;
   line-height: 1.6;
 }
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+}
+
+.store-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: 1px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -185,6 +204,7 @@ footer {
 .aboutme{
     text-align: center;
 }
+
 
 
 
